@@ -1,0 +1,166 @@
+* {
+    background-color: #f4dcb4;
+}
+
+nav {
+    position: fixed;
+    /* fixiert das Element */
+    top: 0;
+    /* oben am Bildschirm */
+    left: 0;
+    /* ganz links anfangen */
+    width: 100%;
+    /* volle Breite */
+    background-color: #78553b;
+    /* Farbe bleibt gleich */
+    z-index: 1000;
+    /* sorgt dafür, dass es über allem anderen liegt */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    /* So werden die li-Elemente zentral angeordnet */
+    background-color: #78553b;
+
+
+}
+
+nav ul li
+
+/* Die li in einem ul in einem nav Element */
+    {
+    display: inline-block;
+    /*Default ausschalten */
+}
+
+
+
+nav ul li a
+
+/* selektiert die a in li in ul in nav */
+    {
+    background-color: #78553b;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    /* Default ausschalten */
+    padding: 1em 2em 1em 2em;
+    display: block;
+    /* sorgt dafür, dass das Padding beachtet wird */
+    /* Transparenter Border sorgt dafür, dass das Element nicht
+        grösser wird, wenn beim Hover der Border eingeblendet wird. */
+    border-bottom: 0.2em solid transparent;
+}
+
+nav ul li a:hover,
+nav ul a:focus
+
+/* wenn Zeiger über dem Element */
+    {
+    border-color: #897cb6;
+    color: white;
+}
+
+ul li:last-child a {
+
+    border-right: none;
+}
+
+article {
+    margin-top: 80px;
+    /* Abstand nach oben, damit nix verdeckt wird (je nach Nav-Höhe anpassen) */
+}
+
+/* Bereich um die Bilder */
+section {
+    margin-top: 8px;
+    display: flex;
+    /* Flexbox aktivieren */
+    flex-wrap: wrap;
+    /* Inhalte umbrechen */
+    justify-content: center;
+    /* Inhalt zentrieren */
+    gap: 20px;
+    /* Abstand zwischen den Bildern */
+    padding: 10px;
+    /* Innenabstand */
+}
+
+/*damit man den Link nicht sieht*/
+.bild-link {
+    background-color: #78563b00;
+    text-decoration: none;
+    padding: 0px;
+
+
+}
+
+/* Container für jedes Bild + Titel */
+.bild-container {
+    border-radius: 10px;
+    /* --> Ecken abrunden */
+    padding: 1em;
+    background-color: #78553b;
+    display: flex;
+    flex-direction: column;
+    /* Stapelt Bild und Titel untereinander */
+    align-items: center;
+    /* Zentriert Bild und Titel */
+    width: 300px;
+    /* Alle Bildcontainer gleich breit */
+
+}
+
+.bild-container:hover,
+.bild-container:focus {
+    background-color: #897cb6;
+
+}
+
+
+/* Die Bilder selbst */
+.bild-container img {
+    width: 100%;
+    /* Bild nimmt gesamte Breite des Containers */
+    height: auto;
+    /* Höhe wird automatisch angepasst */
+    border-radius: 5px;
+    /* Ecken abrunden */
+}
+
+/* Der Titel unter den Bildern */
+.bild-container h3 {
+    background-color: #78563b00;
+    color: white;
+    margin-top: 8px;
+    /* Abstand zwischen Bild und Titel */
+    text-align: center;
+    /* Text zentrieren */
+    font-size: 1.2em;
+    /* Schriftgröße anpassen */
+}
+
+/* 
+section {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+
+
+article img {
+    flex: 1;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+}
+*/
+
+/* Farben: lila: 897cb6, dunkel braun: 78553b, hell braun: d6b37b,
+ bäääsch: f4dcb4, Gäääl: fce31b 

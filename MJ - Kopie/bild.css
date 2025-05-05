@@ -1,0 +1,93 @@
+* {
+    background-color: #f4dcb4;
+}
+
+nav {
+    position: fixed;
+    /* fixiert das Element */
+    top: 0;
+    /* oben am Bildschirm */
+    left: 0;
+    /* ganz links anfangen */
+    width: 100%;
+    /* volle Breite */
+    background-color: #78553b;
+    /* Farbe bleibt gleich */
+    z-index: 1000;
+    /* sorgt dafür, dass es über allem anderen liegt */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    /* So werden die li-Elemente zentral angeordnet */
+    background-color: #78553b;
+
+
+}
+
+nav ul li
+
+/* Die li in einem ul in einem nav Element */
+    {
+    display: inline-block;
+    /*Default ausschalten */
+}
+
+
+
+nav ul li a
+
+/* selektiert die a in li in ul in nav */
+    {
+    background-color: #78553b;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    /* Default ausschalten */
+    padding: 1em 2em 1em 2em;
+    display: block;
+    /* sorgt dafür, dass das Padding beachtet wird */
+    /* Transparenter Border sorgt dafür, dass das Element nicht
+        grösser wird, wenn beim Hover der Border eingeblendet wird. */
+    border-bottom: 0.2em solid transparent;
+}
+
+nav ul li a:hover,
+nav ul a:focus
+
+/* wenn Zeiger über dem Element */
+    {
+    border-color: #897cb6;
+    color: white;
+}
+
+ul li:last-child a {
+
+    border-right: none;
+}
+
+article {
+    margin-top: 80px;
+    /* Abstand nach oben, damit nix verdeckt wird (je nach Nav-Höhe anpassen) */
+}
+
+h1 {
+    margin-left: 45%;
+    font-size: 22px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+
+p {
+
+    font-size: 18px;
+    font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
+
+}
